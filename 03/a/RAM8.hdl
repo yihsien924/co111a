@@ -16,4 +16,15 @@ CHIP RAM8 {
 
     PARTS:
     // Put your code here:
+    //圖片參考:https://nand2tetris-hdl.github.io/#ram8
+    DMux8Way(in=load, sel=address, a=register0, b=R1, c=R2, d=R3, e=R4, f=R5, g=R6, h=R7);
+    Register(in=in, load=register0, out=R0Out);
+    Register(in=in, load=R1, out=R1Out);
+    Register(in=in, load=R2, out=R2Out);
+    Register(in=in, load=R3, out=R3Out);
+    Register(in=in, load=R4, out=R4Out);
+    Register(in=in, load=R5, out=R5Out);
+    Register(in=in, load=R6, out=R6Out);
+    Register(in=in, load=R7, out=R7Out);
+    Mux8Way16(a=R0Out, b=R1Out, c=R2Out, d=R3Out, e=R4Out, f=R5Out, g=R6Out, h=R7Out, sel=address, out=out);
 }

@@ -16,4 +16,16 @@ CHIP RAM64 {
 
     PARTS:
     // Put your code here:
+    //16-bit / 64-register memory
+    //參考:https://nand2tetris-hdl.github.io
+    DMux8Way(in=load, sel=address[0..2], a=R0, b=R1, c=R2, d=R3, e=R4, f=R5, g=R6, h=R7);
+    RAM8(in=in, load=R0, address=address[3..5], out=R0Out);
+    RAM8(in=in, load=R1, address=address[3..5], out=R1Out);
+    RAM8(in=in, load=R2, address=address[3..5], out=R2Out);
+    RAM8(in=in, load=R3, address=address[3..5], out=R3Out);
+    RAM8(in=in, load=R4, address=address[3..5], out=R4Out);
+    RAM8(in=in, load=R5, address=address[3..5], out=R5Out);
+    RAM8(in=in, load=R6, address=address[3..5], out=R6Out);
+    RAM8(in=in, load=R7, address=address[3..5], out=R7Out);
+    Mux8Way16(a=R0Out, b=R1Out, c=R2Out, d=R3Out, e=R4Out, f=R5Out, g=R6Out, h=R7Out, sel=address[0..2], out=out);
 }

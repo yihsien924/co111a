@@ -15,4 +15,7 @@ CHIP Bit {
 
     PARTS:
     // Put your code here:
+    //圖片參考:http://sangarshanan.com/2020/05/16/nand2tetris-1/
+    Mux(a=dffout,b=in,sel=load,out=Muxout);
+    DFF(in=Muxout,out=dffout,out=out);
 }
