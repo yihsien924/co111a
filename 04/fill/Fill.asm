@@ -17,12 +17,13 @@
 //M[p[i]] = -1
 //p=p+1}
 //參考資料:https://www.youtube.com/watch?v=4_bmvT-h8Zs&feature=youtu.be
-//參考資料:https://www.cnblogs.com/YjmStr/p/15371886.html
+//複製資料:https://www.cnblogs.com/YjmStr/p/15371886.html
 
 (LOOP)
 @KBD
 D=M 
 @BLACK 
+
 D;JNE //不相等時跳躍
 @WHITE 
 D;JEQ //相等時跳躍
