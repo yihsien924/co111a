@@ -15,6 +15,7 @@ CHIP And {
 
     PARTS:
     // Put your code here:
+    //複製老師的,從老師教學中學習概念
     Nand(a=a,b=b,out=aNandb);
     Not(in = aNandb,out=out);
 }

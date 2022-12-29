@@ -14,5 +14,6 @@ CHIP Not {
 
     PARTS:
     // Put your code here:
+    //參考老師ppt上的圖片
     Nand(a=in, b=in, out=out);
 }

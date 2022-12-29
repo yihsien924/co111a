@@ -15,6 +15,7 @@ CHIP Or {
 
     PARTS:
     // Put your code here:
+    //參考老師ppt上的圖片
     Nand(a=a,b=a,out=c);
     Nand(a=b,b=b,out=d);
     Nand(a=c,b=d,out=out);
