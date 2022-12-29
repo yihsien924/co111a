@@ -14,5 +14,7 @@ CHIP Inc16 {
 
     PARTS:
    // Put you code here:
+   //老師ppt第57頁寫:Inc16 = Add16(in,1)
+   //並且參考:https://www.cnblogs.com/YjmStr/p/15371886.html的程式碼一邊寫
    Add16(a=in,b[0]=true,out=out);
 }

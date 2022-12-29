@@ -14,6 +14,7 @@ CHIP HalfAdder {
 
     PARTS:
     // Put you code here:
+    //參考圖片:https://helpwalaa.blogspot.com/2019/10/vhdl-half-adder.html
     Xor(a=a,b=b,out=sum);
     And(a=a,b=b,out=carry);
 }

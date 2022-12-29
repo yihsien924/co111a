@@ -14,6 +14,8 @@ CHIP FullAdder {
 
     PARTS:
     // Put you code here:
+    //圖片參考:https://theorycircuit.com/full-adder-circuit-diagram/
+
     Xor(a=a,b=b,out=aXorb);
     Xor(a=aXorb,b=c,out=sum);
     And(a=aXorb,b=c,out=aXorbAndc);
