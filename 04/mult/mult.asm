@@ -7,6 +7,8 @@
 // (R0, R1, R2 refer to RAM[0], RAM[1], and RAM[2], respectively.)
 
 // Put your code here.
+//參考:https://www.youtube.com/watch?v=4_bmvT-h8Zs&feature=youtu.be
+//造著老師2017年的教學影片邏輯一步一步打
 //R2=R1*R0
 
 //R2=0
