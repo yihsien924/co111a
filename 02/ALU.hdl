@@ -43,7 +43,7 @@ CHIP ALU {
 
     PARTS:
    // Put you code here:
-   //看影片教學,並造著他的步驟打
+   //看影片教學,並照著他的步驟打
     //影片網址為:https://www.youtube.com/watch?v=Wl53tFc5WYQ
      Mux16(a=x, b=false, sel=zx, out=xMux);
      Mux16(a=y, b=false, sel=zy, out=yMux);
